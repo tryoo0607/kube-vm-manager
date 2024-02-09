@@ -2,3 +2,8 @@ spring:
     messages:
         basename: i18n/messages
         encoding: UTF-8
+
+swagger:
+    api:
+        base-package: com.stdtrinfra.kubevmmanager.presentation
+        path: /api/v1/**
