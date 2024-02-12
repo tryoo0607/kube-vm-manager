@@ -17,15 +17,21 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	// swagger
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 
 	// Lombok
-	implementation 'org.projectlombok:lombok'
+	compileOnly  'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
-	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	// kubernetes client
+	implementation 'io.fabric8:kubernetes-client:6.10.0'
+
+	// utils
+
+//	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {

@@ -1,4 +1,9 @@
 spring:
+    config:
+        import:
+        - classpath:application-local.yaml
+    profiles:
+        active: local
     messages:
         basename: i18n/messages
         encoding: UTF-8
