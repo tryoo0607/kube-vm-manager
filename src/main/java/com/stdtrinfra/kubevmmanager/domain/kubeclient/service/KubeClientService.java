@@ -9,16 +9,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class KubeClientService {
 
-    @Value("${kube-vm-manager.url}")
-    private String KUBE_URL;
+    public void setKubeConfig(String url, String token) {
 
-    @Value("${kube-vm-manager.token}")
-    private String KUBE_TOKEN;
-
-    public void setKubeConfig() {
-
-        System.setProperty("kubernetes.master", KUBE_URL);
-        System.setProperty("kubernetes.auth.token", KUBE_TOKEN);
+        System.setProperty("kubernetes.master", url);
+        System.setProperty("kubernetes.auth.token", token);
         System.setProperty("kubernetes.trust.certificates", "true");
         System.setProperty("kubernetes.disable.hostname.verification", "true");
 
