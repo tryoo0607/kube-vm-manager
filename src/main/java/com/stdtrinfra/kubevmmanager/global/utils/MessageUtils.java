@@ -1,6 +1,6 @@
-package com.stdtrinfra.kubevmmanager.global.api.utils;
+package com.stdtrinfra.kubevmmanager.global.utils;
 
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseMessage;
+import com.stdtrinfra.kubevmmanager.global.model.ResponseMessage;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

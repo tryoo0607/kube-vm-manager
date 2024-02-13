@@ -1,6 +1,6 @@
-package com.stdtrinfra.kubevmmanager.global.api.exception;
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseMessage;
-import com.stdtrinfra.kubevmmanager.global.api.utils.MessageUtils;
+package com.stdtrinfra.kubevmmanager.global.exception;
+import com.stdtrinfra.kubevmmanager.global.model.ResponseMessage;
+import com.stdtrinfra.kubevmmanager.global.utils.MessageUtils;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 

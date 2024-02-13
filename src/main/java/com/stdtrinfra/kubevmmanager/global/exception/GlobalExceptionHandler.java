@@ -1,6 +1,6 @@
-package com.stdtrinfra.kubevmmanager.global.api.exception;
+package com.stdtrinfra.kubevmmanager.global.exception;
 
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseData;
+import com.stdtrinfra.kubevmmanager.global.model.ResponseData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

@@ -1,4 +1,4 @@
-package com.stdtrinfra.kubevmmanager.global.api.config;
+package com.stdtrinfra.kubevmmanager.global.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

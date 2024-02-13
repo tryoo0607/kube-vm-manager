@@ -1,4 +1,4 @@
-package com.stdtrinfra.kubevmmanager.global.api.model;
+package com.stdtrinfra.kubevmmanager.global.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

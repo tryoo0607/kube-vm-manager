@@ -1,6 +1,5 @@
-package com.stdtrinfra.kubevmmanager.global.api.model;
+package com.stdtrinfra.kubevmmanager.global.model;
 
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseMessage;
 import lombok.Getter;
 
 import java.io.Serializable;

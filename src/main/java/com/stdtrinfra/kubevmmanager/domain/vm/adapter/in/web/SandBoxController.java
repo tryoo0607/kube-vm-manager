@@ -1,9 +1,9 @@
-package com.stdtrinfra.kubevmmanager.presentation.sandbox.controller;
+package com.stdtrinfra.kubevmmanager.domain.vm.adapter.in.web;
 
-import com.stdtrinfra.kubevmmanager.application.sandbox.service.SandboxService;
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseMessage;
-import com.stdtrinfra.kubevmmanager.global.api.utils.MessageUtils;
-import com.stdtrinfra.kubevmmanager.global.api.model.ResponseData;
+import com.stdtrinfra.kubevmmanager.domain.vm.application.in.SandboxUseCase;
+import com.stdtrinfra.kubevmmanager.global.model.ResponseMessage;
+import com.stdtrinfra.kubevmmanager.global.utils.MessageUtils;
+import com.stdtrinfra.kubevmmanager.global.model.ResponseData;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,15 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sandbox")
 public class SandBoxController {
+    private final SandboxUseCase sandboxUseCase;
 
     @Autowired
-    private SandboxService sandboxService;
+    private SandBoxController(SandboxUseCase sandboxUseCase) {
+        this.sandboxUseCase = sandboxUseCase;
+    }
 
     @GetMapping("")
     @Operation(summary="backup 상세 조회", description="backup 상세 조회")
     public ResponseData<String> getBackupDetail() {
         ResponseMessage responseMessage = MessageUtils.getMessage("200");
-        String result = sandboxService.getNamespaceTest();
+        String result = sandboxUseCase.getNamespaceTest();
 
         return new ResponseData<>(result, responseMessage);
     }
