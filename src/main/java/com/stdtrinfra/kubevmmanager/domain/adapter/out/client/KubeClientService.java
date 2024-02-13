@@ -1,7 +1,7 @@
-package com.stdtrinfra.kubevmmanager.domain.vm.adapter.out.client;
+package com.stdtrinfra.kubevmmanager.domain.adapter.out.client;
 
-import com.stdtrinfra.kubevmmanager.domain.vm.application.out.KubeClientPort;
-import com.stdtrinfra.kubevmmanager.domain.vm.application.out.SandboxPort;
+import com.stdtrinfra.kubevmmanager.domain.application.out.KubeClientPort;
+import com.stdtrinfra.kubevmmanager.domain.application.out.SandboxPort;
 import io.fabric8.kubernetes.client.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

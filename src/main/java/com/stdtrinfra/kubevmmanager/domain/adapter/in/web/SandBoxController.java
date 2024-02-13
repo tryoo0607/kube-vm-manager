@@ -1,6 +1,6 @@
-package com.stdtrinfra.kubevmmanager.domain.vm.adapter.in.web;
+package com.stdtrinfra.kubevmmanager.domain.adapter.in.web;
 
-import com.stdtrinfra.kubevmmanager.domain.vm.application.in.SandboxUseCase;
+import com.stdtrinfra.kubevmmanager.domain.application.in.SandboxUseCase;
 import com.stdtrinfra.kubevmmanager.global.model.ResponseMessage;
 import com.stdtrinfra.kubevmmanager.global.utils.MessageUtils;
 import com.stdtrinfra.kubevmmanager.global.model.ResponseData;

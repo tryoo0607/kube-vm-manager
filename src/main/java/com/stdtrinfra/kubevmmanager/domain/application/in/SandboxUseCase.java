@@ -1,6 +1,5 @@
-package com.stdtrinfra.kubevmmanager.domain.vm.application.in;
+package com.stdtrinfra.kubevmmanager.domain.application.in;
 
 public interface SandboxUseCase {
-
     String getNamespaceTest();
 }

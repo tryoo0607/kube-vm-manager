@@ -1,6 +1,6 @@
-package com.stdtrinfra.kubevmmanager.domain.vm.application;
+package com.stdtrinfra.kubevmmanager.domain.application;
 
-import com.stdtrinfra.kubevmmanager.domain.vm.application.out.KubeClientPort;
+import com.stdtrinfra.kubevmmanager.domain.application.out.KubeClientPort;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
