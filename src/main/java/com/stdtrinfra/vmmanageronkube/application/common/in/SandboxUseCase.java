@@ -1,4 +1,4 @@
-package com.stdtrinfra.vmmanageronkube.application.vm.in;
+package com.stdtrinfra.vmmanageronkube.application.common.in;
 
 public interface SandboxUseCase {
     String getNamespaceTest();

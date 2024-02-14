@@ -1,7 +1,7 @@
-package com.stdtrinfra.vmmanageronkube.application.vm;
+package com.stdtrinfra.vmmanageronkube.application.common;
 
-import com.stdtrinfra.vmmanageronkube.application.vm.in.SandboxUseCase;
-import com.stdtrinfra.vmmanageronkube.application.vm.out.SandboxPort;
+import com.stdtrinfra.vmmanageronkube.application.common.in.SandboxUseCase;
+import com.stdtrinfra.vmmanageronkube.application.common.out.SandboxPort;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
