@@ -10,5 +10,5 @@ spring:
 
 swagger:
     api:
-        base-package: com.stdtrinfra.kubevmmanager.presentation
+        base-package: com.stdtrinfra.vmmanageronkube.adapter.in.web
         path: /api/v1/**
