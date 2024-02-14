@@ -16,6 +16,7 @@ repositories {
 }
 
 dependencies {
+	// spring boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
@@ -26,12 +27,12 @@ dependencies {
 	compileOnly  'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
-	// kubernetes client
+	// fabric8 kubernetes client
 	implementation 'io.fabric8:kubernetes-client:6.10.0'
+	annotationProcessor 'io.fabric8:crd-generator-apt:6.10.0'
 
 	// utils
-
-//	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {

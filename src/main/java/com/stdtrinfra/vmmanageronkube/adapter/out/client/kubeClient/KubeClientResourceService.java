@@ -1,14 +1,14 @@
-package com.stdtrinfra.vmmanageronkube.adapter.out.client;
+package com.stdtrinfra.vmmanageronkube.adapter.out.client.kubeClient;
 
-import com.stdtrinfra.vmmanageronkube.application.common.out.KubeClientResourcePort;
-import com.stdtrinfra.vmmanageronkube.application.common.out.SandboxPort;
+import com.stdtrinfra.vmmanageronkube.application.out.KubeClientResourcePort;
+import com.stdtrinfra.vmmanageronkube.application.out.SandboxPort;
 import io.fabric8.kubernetes.client.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class KubeClientResourceService implements SandboxPort, KubeClientResourcePort {
+class KubeClientResourceService implements SandboxPort, KubeClientResourcePort {
 
     @Override
     public void setKubeConfig(String url, String token) {

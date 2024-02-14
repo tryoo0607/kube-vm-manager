@@ -1,4 +1,4 @@
-package com.stdtrinfra.vmmanageronkube.application.common.out;
+package com.stdtrinfra.vmmanageronkube.application.out;
 
 public interface SandboxPort {
    String getNamespaceTest();
