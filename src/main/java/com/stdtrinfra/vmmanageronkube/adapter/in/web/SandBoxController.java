@@ -1,6 +1,6 @@
 package com.stdtrinfra.vmmanageronkube.adapter.in.web;
 
-import com.stdtrinfra.vmmanageronkube.application.in.SandboxUseCase;
+import com.stdtrinfra.vmmanageronkube.application.vm.in.SandboxUseCase;
 import com.stdtrinfra.vmmanageronkube.global.model.ResponseMessage;
 import com.stdtrinfra.vmmanageronkube.global.utils.MessageUtils;
 import com.stdtrinfra.vmmanageronkube.global.model.ResponseData;

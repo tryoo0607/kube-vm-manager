@@ -1,7 +1,7 @@
-package com.stdtrinfra.vmmanageronkube.application;
+package com.stdtrinfra.vmmanageronkube.application.vm;
 
-import com.stdtrinfra.vmmanageronkube.application.in.SandboxUseCase;
-import com.stdtrinfra.vmmanageronkube.application.out.SandboxPort;
+import com.stdtrinfra.vmmanageronkube.application.vm.in.SandboxUseCase;
+import com.stdtrinfra.vmmanageronkube.application.vm.out.SandboxPort;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-class SandboxService implements SandboxUseCase {
+public class SandboxService implements SandboxUseCase {
 
     private final SandboxPort sandboxPort;
 
     @Autowired
-    SandboxService(SandboxPort sandboxPort) {
+    public SandboxService(SandboxPort sandboxPort) {
         this.sandboxPort = sandboxPort;
     }
 
