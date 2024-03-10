@@ -1,4 +1,4 @@
-package com.stdtrinfra.vmmanageronkube.domain.vm;
+package com.stdtrinfra.vmmanageronkube.domain.vm.v1beta1;
 
 public class DataVolumeSource {
 

@@ -1,4 +1,4 @@
-package com.stdtrinfra.vmmanageronkube.domain.vm;
+package com.stdtrinfra.vmmanageronkube.domain.vm.v1;
 
 import com.stdtrinfra.vmmanageronkube.domain.common.KubeResource;
 import lombok.Getter;
@@ -9,14 +9,12 @@ import java.util.List;
 @Getter
 @Setter
 public class VirtualMachineSpec implements KubeResource {
-    private List<DataVolumeTemplateSpec> dataVolumeTemplates;
 
-//    private InstancetypeMatcher instancetype;
+    private List<DataVolumeTemplateSpec> dataVolumeTemplates;
+    private InstancetypeMatcher instancetype;
+    private PreferenceMatcher preferenceMatcher;
     private String runStrategy;
     private boolean running;
-
-//    private LiveUpdateFeatures liveUpdateFeatures
-
-//    private VirtualMachineInstanceTemplateSpec template;
+    private VirtualMachineInstanceTemplateSpec template;
 
 }
