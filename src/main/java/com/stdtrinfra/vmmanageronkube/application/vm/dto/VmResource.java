@@ -1,4 +1,6 @@
 package com.stdtrinfra.vmmanageronkube.application.vm.dto;
 
-public class KubeClientResourceDto {
+public interface VmResource {
+
+
 }

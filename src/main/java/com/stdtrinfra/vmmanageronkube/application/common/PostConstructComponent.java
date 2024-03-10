@@ -1,6 +1,6 @@
-package com.stdtrinfra.vmmanageronkube.application.vm;
+package com.stdtrinfra.vmmanageronkube.application.common;
 
-import com.stdtrinfra.vmmanageronkube.application.vm.out.KubeClientResourcePort;
+import com.stdtrinfra.vmmanageronkube.application.common.out.KubeClientResourcePort;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
