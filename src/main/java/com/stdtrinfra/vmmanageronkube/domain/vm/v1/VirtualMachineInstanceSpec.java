@@ -1,5 +1,10 @@
 package com.stdtrinfra.vmmanageronkube.domain.vm.v1;
 
+import com.stdtrinfra.vmmanageronkube.domain.common.v1.Affinity;
+import com.stdtrinfra.vmmanageronkube.domain.common.v1.PodDNSConfig;
+import com.stdtrinfra.vmmanageronkube.domain.common.v1.Toleration;
+import com.stdtrinfra.vmmanageronkube.domain.common.v1.TopologySpreadConstraint;
+import com.stdtrinfra.vmmanageronkube.domain.vm.DNSEnum;
 import io.swagger.v3.oas.annotations.Parameter;
 
 import java.util.List;

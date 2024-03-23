@@ -4,5 +4,7 @@ public class Affinity {
 
     private NodeAffinity nodeAffinity;
 
-    private Pod
+    private PodAffinity podAffinity;
+
+    private PodAntiAffinity podAntiAffinity;
 }
